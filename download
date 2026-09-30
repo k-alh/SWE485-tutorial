@@ -1,0 +1,12 @@
+# Files excluded from the retrieval index.
+#
+# In a real project this list is usually inherited from .gitignore plus a few
+# size and file-type rules, and almost nobody reads it. That is the point.
+
+__pycache__/
+*.pyc
+
+# Excluded during the 2026-03 security review, pending a decision about
+# whether second-factor logic should sit in a searchable index at all.
+# Never revisited.
+auth/mfa.py
